@@ -8,14 +8,14 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <script>
-        const user = JSON.parse(localStorage.getItem("wanderlust_users"));
-        const isLoggedIn = localStorage.getItem("isLoggedIn");
+         const users = JSON.parse(localStorage.getItem("wanderlust_users"));
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-        if (!user) {
-            window.location.href = "signup.html";
-        } else if (!isLoggedIn) {
-            window.location.href = "signin.html";
-        }
+  if (!users || users.length === 0) {
+    window.location.href = "signup.html";
+  } else if (!isLoggedIn) {
+    window.location.href = "signin.html";
+  }
     </script>
 </head>
 <body>
