@@ -534,6 +534,7 @@ window.addEventListener('resize', function () {
                 }
 
                 // Successful login – redirect to travel app
+                localStorage.setItem("isLoggedIn", "true");
                 window.location.href = 'index.html';
             });
         });
