@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust - Explore the World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">WanderLust</a>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#destinations" class="nav-link">Destinations</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-nav-link active">Home</a>
+        <a href="#destinations" class="mobile-nav-link">Destinations</a>
+        <a href="#features" class="mobile-nav-link">Features</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Next Adventure</h1>
+                <p class="hero-tagline">Explore the world's most breathtaking destinations with WanderLust</p>
+                <a href="#destinations" class="cta-button">Start Exploring</a>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- About/Features Section -->
+        <section class="about" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose WanderLust?</h2>
+                    <p>Your gateway to unforgettable travel experiences around the globe</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✈️</div>
+                        <h3>Best Deals</h3>
+                        <p>Find and book the most competitive prices on flights, hotels, and packages worldwide</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Expert Guides</h3>
+                        <p>Get insider tips and detailed guides from travel experts who know every destination</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🏨</div>
+                        <h3>Curated Stays</h3>
+                        <p>Choose from handpicked accommodations that match your budget and travel style</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Global Coverage</h3>
+                        <p>Access over 500+ destinations across every continent with real-time information</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Community</h3>
+                        <p>Connect with fellow travelers, share experiences, and build lasting friendships</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>24/7 Support</h3>
+                        <p>Get instant help whenever you need it with our round-the-clock customer service</p>
+                    </div>
+                </div>
+
+                <div class="mission-statement">
+                    <h3>Our Mission</h3>
+                    <p>At WanderLust, we believe that travel transforms lives. We're dedicated to making global exploration accessible, affordable, and unforgettable for every adventurer, whether you're a seasoned globetrotter or taking your first international trip.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="destinations" id="destinations">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Destinations</h2>
+                    <p>Handpicked locations that will capture your heart</p>
+                </div>
+
+                <div class="destinations-grid">
+                    <!-- Destination 1: Bali -->
+                    <div class="destination-card">
+                        <img src="images/destination_1.jpg" alt="Bali Beach with palm trees" class="destination-image">
+                        <div class="destination-content">
+                            <h3>Bali, Indonesia</h3>
+                            <p>Experience the magic of tropical paradise with pristine beaches, ancient temples, and vibrant culture. Perfect for relaxation and adventure seekers alike.</p>
+                            <a href="#destinations" class="destination-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Destination 2: Paris -->
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&h=300&fit=crop" alt="Eiffel Tower in Paris" class="destination-image">
+                        <div class="destination-content">
+                            <h3>Paris, France</h3>
+                            <p>The City of Light awaits with iconic monuments, world-class cuisine, and romantic atmosphere. Stroll along the Seine and fall in love with Parisian charm.</p>
+                            <a href="#destinations" class="destination-link">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Destination 3: Tokyo -->
+                    <div class="destination-card">
+                        <img src="images/destination_2.jpg" alt="Tokyo cityscape at night" class="destination-image">
+                        <div class="destination-content">
+                            <h3>Tokyo, Japan</h3>
+                            <p>Dive into the electric energy of Japan's bustling capital, where ancient traditions meet cutting-edge technology and innovation.</p>
+                            <a href="#destinations" class="destination-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? Want to share your travel story? We'd love to hear from you!</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Why Contact Us?</h3>
+                        <ul>
+                            <li>Get personalized travel recommendations</li>
+                            <li>Subscribe to our travel newsletter</li>
+                            <li>Report issues or feedback</li>
+                            <li>Partner with WanderLust</li>
+                            <li>Special group travel inquiries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 WanderLust. All rights reserved. | Explore. Dream. Discover.</p>
+                <div class="footer-links">
+                    <a href="#home">Privacy Policy</a>
+                    <a href="#home">Terms of Service</a>
+                    <a href="#home">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

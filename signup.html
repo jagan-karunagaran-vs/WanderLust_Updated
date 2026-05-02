@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up – WanderLust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+
+    <!-- Background blobs -->
+    <div class="auth-bg">
+        <div class="auth-blob auth-blob--1"></div>
+        <div class="auth-blob auth-blob--2"></div>
+        <div class="auth-blob auth-blob--3"></div>
+    </div>
+
+    <div class="auth-wrapper">
+        <!-- Left branding panel -->
+        <div class="auth-brand">
+            <a href="index.html" class="auth-logo">WanderLust</a>
+            <h2 class="auth-brand__headline">Start your journey today.</h2>
+            <p class="auth-brand__sub">Join thousands of travellers exploring the world with WanderLust.</p>
+            <div class="auth-brand__pills">
+                <span class="pill">✈️ 200+ Destinations</span>
+                <span class="pill">🌟 Top Rated</span>
+                <span class="pill">🔒 Secure</span>
+            </div>
+        </div>
+
+        <!-- Right form panel -->
+        <div class="auth-card">
+            <div class="auth-card__header">
+                <h1 class="auth-card__title">Create Account</h1>
+                <p class="auth-card__sub">Fill in the details below to get started</p>
+            </div>
+
+            <form id="signupForm" class="auth-form" novalidate>
+
+                <!-- Full Name -->
+                <div class="auth-field" id="field-fullName">
+                    <label class="auth-label" for="fullName">Full Name</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">👤</span>
+                        <input
+                            class="auth-input"
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Jagan Karunagaran"
+                            autocomplete="name"
+                        >
+                    </div>
+                    <span class="auth-error" id="err-fullName"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="auth-field" id="field-email">
+                    <label class="auth-label" for="email">Email Address</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">✉️</span>
+                        <input
+                            class="auth-input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                        >
+                    </div>
+                    <span class="auth-error" id="err-email"></span>
+                </div>
+
+                <!-- Phone -->
+                <div class="auth-field" id="field-phone">
+                    <label class="auth-label" for="phone">Phone Number</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">📱</span>
+                        <input
+                            class="auth-input"
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit number"
+                            maxlength="10"
+                            autocomplete="tel"
+                        >
+                    </div>
+                    <span class="auth-error" id="err-phone"></span>
+                </div>
+
+                <!-- Location -->
+                <div class="auth-field" id="field-location">
+                    <label class="auth-label" for="location">City / Location</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">📍</span>
+                        <input
+                            class="auth-input"
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Chennai"
+                            autocomplete="address-level2"
+                        >
+                    </div>
+                    <span class="auth-error" id="err-location"></span>
+                </div>
+
+                <!-- Password -->
+                <div class="auth-field" id="field-password">
+                    <label class="auth-label" for="password">Password</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">🔒</span>
+                        <input
+                            class="auth-input auth-input--pw"
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Min 8 chars, letters & numbers"
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="auth-toggle-pw" data-target="password" aria-label="Toggle password">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="auth-error" id="err-password"></span>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="auth-field" id="field-confirmPassword">
+                    <label class="auth-label" for="confirmPassword">Confirm Password</label>
+                    <div class="auth-input-wrap">
+                        <span class="auth-input-icon">🔑</span>
+                        <input
+                            class="auth-input auth-input--pw"
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="auth-toggle-pw" data-target="confirmPassword" aria-label="Toggle confirm password">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="auth-error" id="err-confirmPassword"></span>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="auth-btn" id="signupBtn">
+                    <span class="auth-btn__text">Create Account</span>
+                    <span class="auth-btn__loader" aria-hidden="true"></span>
+                </button>
+
+                <!-- Success toast -->
+                <div class="auth-success" id="signupSuccess" role="alert" aria-live="polite"></div>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="signin.html" class="auth-switch__link">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
