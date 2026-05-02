@@ -946,7 +946,7 @@ a {
 
 /* ---- Page-level reset for auth pages ---- */
 body.auth-page {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1016,7 +1016,7 @@ body.auth-page {
     grid-template-columns: 1fr 1fr;
     max-width: 920px;
     width: 100%;
-    min-height: 580px;
+    min-height: auto;
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 30px 80px rgba(102, 126, 234, 0.22), 0 8px 24px rgba(0,0,0,0.1);
@@ -1403,7 +1403,8 @@ body.auth-page {
 
     .auth-wrapper {
         grid-template-columns: 1fr;
-        max-width: 440px;
+        width: 100%;              /* ✅ ADDED */
+        max-width: 100%;          /* ✅ UPDATED (was 440px) */
         margin: 0 auto;
         border-radius: 22px;
         min-height: unset;
@@ -1428,6 +1429,11 @@ body.auth-page {
 
     .auth-card__title {
         font-size: 1.5rem;
+    }
+
+    /* ✅ ADD THIS (very important) */
+    .auth-blob {
+        display: none;
     }
 }
 
